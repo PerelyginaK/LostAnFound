@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LostFound.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="T:LostFound.WebAPI.AppConfiguration.ApplicationExtensions.AppExtensions">
+            <summary>
+            Application builder extensions
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.AppConfiguration.ApplicationExtensions.AppExtensions.UseSerilogConfiguration(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Use serilog configuration
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="M:LostFound.WebAPI.AppConfiguration.ApplicationExtensions.AppExtensions.UseSwaggerConfiguration(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            Use swagger configuration
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="M:LostFound.WebAPI.AppConfiguration.ServicesExtensions.ServicesExtensions.AddDbContextConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Add serilog configuration
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:LostFound.WebAPI.AppConfiguration.ServicesExtensions.ServicesExtensions.AddMapperConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Add serilog configuration
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:LostFound.WebAPI.AppConfiguration.ServicesExtensions.ServicesExtensions.AddSerilogConfiguration(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>
+            Add serilog configuration
+            </summary>
+            <param name="builder"></param>
+        </member>
+        <member name="M:LostFound.WebAPI.AppConfiguration.ServicesExtensions.ServicesExtensions.AddSwaggerConfiguration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Add swagger settings
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="T:LostFound.WebAPI.Controllers.BureausController">
+            <summary>
+            Bureau endpoints
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.BureausController.#ctor(LostFound.Services.Abstract.IBureauService,AutoMapper.IMapper)">
+            <summary>
+            Doctors controller
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.BureausController.GetBureaus(System.Int32,System.Int32)">
+            <summary>
+            Get Bureaus by pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.BureausController.DeleteBureau(System.Guid)">
+            <summary>
+            Delete Bureau
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.BureausController.GetBureau(System.Guid)">
+            <summary>
+            Get Bureau
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.BureausController.AddBureau(LostFound.Services.Models.BureauModel)">
+            <summary>
+            Add Bureau
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LostFound.WebAPI.Controllers.CitysController">
+            <summary>
+            City endpoints
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.CitysController.#ctor(LostFound.Services.Abstract.ICityService,AutoMapper.IMapper)">
+            <summary>
+            Doctors controller
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.CitysController.GetCitys(System.Int32,System.Int32)">
+            <summary>
+            Get Citys by pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.CitysController.DeleteCity(System.Guid)">
+            <summary>
+            Delete City
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.CitysController.GetCity(System.Guid)">
+            <summary>
+            Get City
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.CitysController.AddCity(LostFound.Services.Models.CityModel)">
+            <summary>
+            Add City
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LostFound.WebAPI.Controllers.EmployeesController">
+            <summary>
+            Employee endpoints
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.EmployeesController.#ctor(LostFound.Services.Abstract.IEmployeeService,AutoMapper.IMapper)">
+            <summary>
+            Doctors controller
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.EmployeesController.GetEmployees(System.Int32,System.Int32)">
+            <summary>
+            Get Employees by pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.EmployeesController.DeleteEmployee(System.Guid)">
+            <summary>
+            Delete Employee
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.EmployeesController.GetEmployee(System.Guid)">
+            <summary>
+            Get Employee
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.EmployeesController.AddEmployee(LostFound.Services.Models.EmployeeModel)">
+            <summary>
+            Add Employee
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LostFound.WebAPI.Controllers.FindingsController">
+            <summary>
+            Finding endpoints
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.FindingsController.#ctor(LostFound.Services.Abstract.IFindingService,AutoMapper.IMapper)">
+            <summary>
+            Doctors controller
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.FindingsController.GetFindings(System.Int32,System.Int32)">
+            <summary>
+            Get Findings by pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.FindingsController.UpdateFinding(System.Guid,LostFound.WebAPI.Models.UpdateFindingRequest)">
+            <summary>
+            Update Finding
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.FindingsController.DeleteFinding(System.Guid)">
+            <summary>
+            Delete Finding
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.FindingsController.GetFinding(System.Guid)">
+            <summary>
+            Get Finding
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.FindingsController.AddFinding(LostFound.Services.Models.FindingModel)">
+            <summary>
+            Add Finding
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:LostFound.WebAPI.Controllers.UsersController">
+            <summary>
+            User endpoints
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.UsersController.#ctor(LostFound.Services.Abstract.IUserService,AutoMapper.IMapper)">
+            <summary>
+            Doctors controller
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.UsersController.GetUsers(System.Int32,System.Int32)">
+            <summary>
+            Get Users by pages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.UsersController.DeleteUser(System.Guid)">
+            <summary>
+            Delete User
+            </summary>
+        </member>
+        <member name="M:LostFound.WebAPI.Controllers.UsersController.GetUser(System.Guid)">
+            <summary>
+            Get User
+            </summary>
+        </member>
+    </members>
+</doc>
